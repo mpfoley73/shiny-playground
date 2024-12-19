@@ -352,10 +352,26 @@ display: none;
 </div>
 
 
-<div id="lesson-1" class="section level1">
-<h1>Lesson 1</h1>
-<p>This app is from <a href="https://shiny.posit.co/r/getstarted/shiny-basics/lesson1/">Lesson
-1</a> of Shiny’s Get Started web site.</p>
+<div id="app-1" class="section level1">
+<h1>App-1</h1>
+<p><a href="https://shiny.posit.co/r/getstarted/shiny-basics/lesson1/">Lesson
+1</a> of Shiny’s <em>Get Started</em> web site uses App-1 to introduce
+Shiny.</p>
+<p>Shiny apps are defined in a single script named <code>app.R</code>
+with three components:</p>
+<pre class="r"><code>ui &lt;- 
+
+server &lt;- function()
+
+shinyApp(ui = ui, server = server)</code></pre>
+<p>Run the app from your console with a call to
+<code>runApp()</code>.</p>
+<pre class="r"><code>library(shiny)
+runApp(&quot;App-1&quot;)</code></pre>
+<p>Even better, show the associated code and this README by running in
+“showcase mode”,
+<code>runApp(&quot;App-1&quot;, display.mode = &quot;showcase&quot;)</code>. I modified the
+example to use ggplot.</p>
 </div>
 
 
